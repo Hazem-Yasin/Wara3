@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "6zdZUY74UV0wPsOE1YAD4FnFY1akO0N3GJACuw3OYAI=",
+  "Source": "Wara3_FullStack_Angular_.net.Server",
+  "BasePath": "_content/Wara3_FullStack_Angular_.net.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\Wara3_FullStack_Angular_.net\\wara3_fullstack_angular_.net.client\\wara3_fullstack_angular_.net.client.esproj",
+      "Version": 2,
+      "Source": "wara3_fullstack_angular_.net.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

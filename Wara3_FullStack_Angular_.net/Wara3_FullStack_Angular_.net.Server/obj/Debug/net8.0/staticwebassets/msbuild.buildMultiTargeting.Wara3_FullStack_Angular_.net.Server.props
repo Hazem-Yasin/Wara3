@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Wara3_FullStack_Angular_.net.Server.props" />
+</Project>

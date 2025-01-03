@@ -1,0 +1,13 @@
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\bin\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.deps.json
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\bin\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.dll
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\bin\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.pdb
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.AssemblyInfo.cs
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.sourcelink.json
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.dll
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\refint\Wara3_FullStack_Angular_.net.ServiceDefaults.dll
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\Wara3_FullStack_Angular_.net.ServiceDefaults.pdb
+C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\Wara3_FullStack_Angular_.net\Wara3_FullStack_Angular_.net.ServiceDefaults\obj\Debug\net8.0\ref\Wara3_FullStack_Angular_.net.ServiceDefaults.dll
