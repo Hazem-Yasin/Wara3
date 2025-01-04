@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\reactproject1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD9A16F-B7A4-4505-A764-CFCA8A59C402}|reactproject1\\reactproject1.esproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\reactproject1\\reactproject1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DBD9A16F-B7A4-4505-A764-CFCA8A59C402}|reactproject1\\reactproject1.esproj|solutionrelative:reactproject1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD9A16F-B7A4-4505-A764-CFCA8A59C402}|reactproject1\\reactproject1.esproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\reactproject1\\reactproject1\\src\\app.jsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DBD9A16F-B7A4-4505-A764-CFCA8A59C402}|reactproject1\\reactproject1.esproj|solutionrelative:reactproject1\\src\\app.jsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\reactproject1\\reactproject1\\src\\App.jsx",
+              "RelativeDocumentMoniker": "reactproject1\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\reactproject1\\reactproject1\\src\\App.jsx",
+              "RelativeToolTip": "reactproject1\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-04T00:50:18.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\reactproject1\\reactproject1\\src\\main.jsx",
+              "RelativeDocumentMoniker": "reactproject1\\src\\main.jsx",
+              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\reactproject1\\reactproject1\\src\\main.jsx",
+              "RelativeToolTip": "reactproject1\\src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-04T00:47:58.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

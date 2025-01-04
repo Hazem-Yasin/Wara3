@@ -26,7 +26,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wara3_FullStack_Angular_.net.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffb4857b84ebf049325e12880a84120a05174b17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc69a10f6eb48e1b86fea422acd1f4fa01a49afd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wara3_FullStack_Angular_.net.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wara3_FullStack_Angular_.net.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
