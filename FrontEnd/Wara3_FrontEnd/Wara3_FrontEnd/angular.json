@@ -75,7 +75,7 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 56654
+            "port": 50956
           }
         },
         "extract-i18n": {
@@ -105,8 +105,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "054ed576-82c6-4a97-9fad-a51eae03cc9f"
   }
 }
