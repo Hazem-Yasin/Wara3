@@ -35,3 +35,11 @@ C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\web api\Wara3__web_ap
 C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.pdb
 C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.genruntimeconfig.cache
 C:\Users\hazem\OneDrive\Documents\Git\GitHub Desktop\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\ref\Wara3__web_api.dll
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.csproj.AssemblyReference.cache
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.AssemblyInfoInputs.cache
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.AssemblyInfo.cs
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.csproj.CoreCompileInputs.cache
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HazemYa-sin\Github\Wara3\web api\Wara3__web_api\Wara3__web_api\obj\Debug\net8.0\Wara3__web_api.sourcelink.json
