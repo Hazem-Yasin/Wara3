@@ -32,7 +32,6 @@ namespace Wara3__web_api.Controllers
         {
             // Find the user by the given ID from the database
             var user = await _context.Users.FindAsync(id);
-
             // If no user is found, return a 404 Not Found response
             if (user == null)
             {
@@ -49,6 +48,42 @@ namespace Wara3__web_api.Controllers
             return Ok($"User name updated to {newUserName}");
         }
         #endregion
+
+        #region DeleteUser 
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            //searching for the user in the datbase
+            var user = await _context.Users.FindAsync(id);
+            //checking if the user exist
+            if (user == null)
+            {
+                return NotFound($"user with the user id {id} is not found");
+            }
+            //deleteing the user 
+            _context.Users.Remove(user);
+            //save the changes to db
+            await _context.SaveChangesAsync();
+            //returnong the ok result
+            return Ok($"user with the user id of {id} have been deleted");
+        }
+        #endregion
+
+        #region CreateUser 
+        [HttpPost("{id}")]
+        public async Task<IActionResult> CreateUser(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+
+            if(user == null)
+            {
+                return NotFound($"user with the user id of {id} is not found");
+            }
+            _context.Users
+        }
+        #endregion
+
 
 
     }

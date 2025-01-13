@@ -1,105 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\",
+  "WorkspaceRootPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\addictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\addictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\models\\addiction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\addictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\addictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\models\\addiction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\models\\addiction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\models\\notifcation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\models\\notifcation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\wara3__web_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\wara3__web_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazem\\onedrive\\documents\\git\\github desktop\\wara3\\web api\\wara3__web_api\\wara3__web_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-=======
-=======
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\models\\addiction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -115,18 +35,11 @@
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|c:\\users\\hazemya-sin\\github\\wara3\\web api\\wara3__web_api\\wara3__web_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{EF10839C-2A6E-477F-8A5B-4A59E04CE463}|Wara3__web_api\\Wara3__web_api.csproj|solutionrelative:wara3__web_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -137,31 +50,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Addiction.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Addiction.cs",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Addiction.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\Models\\Addiction.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Addiction.cs",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Addiction.cs",
               "RelativeToolTip": "Wara3__web_api\\Models\\Addiction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:18:03.106Z",
-              "IsPinned": true
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+              "WhenOpened": "2025-01-13T13:37:23.571Z"
             },
             {
               "$type": "Document",
@@ -171,55 +76,14 @@
               "RelativeDocumentMoniker": "Wara3__web_api\\Models\\User.cs",
               "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\User.cs",
               "RelativeToolTip": "Wara3__web_api\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:17:54.396Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-01-13T13:37:23.76Z",
               "EditorCaption": ""
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-=======
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T18:22:24.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T15:17:20.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Wara3__web_api.csproj",
               "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
               "RelativeDocumentMoniker": "Wara3__web_api\\Wara3__web_api.csproj",
@@ -227,270 +91,68 @@
               "RelativeToolTip": "Wara3__web_api\\Wara3__web_api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T14:43:45.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notifcation.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeToolTip": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:37:46.192Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T18:22:24.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T15:17:20.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Wara3__web_api.csproj",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeToolTip": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T14:43:45.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notifcation.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeToolTip": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:37:46.192Z"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\User.cs",
-              "RelativeToolTip": "Wara3__web_api\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:17:54.396Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-<<<<<<< Updated upstream
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-=======
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-=======
->>>>>>> Stashed changes
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T18:22:24.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T15:17:20.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Wara3__web_api.csproj",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeToolTip": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T14:43:45.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notifcation.cs",
-              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
-              "RelativeToolTip": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:37:46.192Z"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Wara3__web_api.csproj",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
-              "RelativeToolTip": "Wara3__web_api\\Wara3__web_api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T14:43:45.194Z"
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+              "WhenOpened": "2025-01-13T13:37:23.77Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\UserController.cs",
               "RelativeToolTip": "Wara3__web_api\\Controllers\\UserController.cs",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
->>>>>>> Stashed changes
-=======
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
->>>>>>> Stashed changes
-=======
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
->>>>>>> Stashed changes
-=======
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
->>>>>>> Stashed changes
-=======
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
->>>>>>> Stashed changes
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwFIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:02:41.357Z",
+              "WhenOpened": "2025-01-13T13:37:24.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\ApplicationDbContext.cs",
               "RelativeToolTip": "Wara3__web_api\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T15:17:20.916Z"
+              "WhenOpened": "2025-01-13T13:37:24.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Notifcation.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\Models\\Notifcation.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Models\\Notifcation.cs",
               "RelativeToolTip": "Wara3__web_api\\Models\\Notifcation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:37:46.192Z"
+              "WhenOpened": "2025-01-13T13:37:24.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Wara3__web_api\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T18:22:24.522Z"
+              "WhenOpened": "2025-01-13T13:37:24.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-=======
-              "DocumentIndex": 2,
->>>>>>> Stashed changes
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Program.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Program.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Program.cs",
-              "RelativeToolTip": "Wara3__web_api\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBkAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:41:04.636Z",
-              "EditorCaption": ""
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Program.cs",
               "RelativeDocumentMoniker": "Wara3__web_api\\Program.cs",
               "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Program.cs",
               "RelativeToolTip": "Wara3__web_api\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBkAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:41:04.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:37:24.238Z"
             },
             {
               "$type": "Document",
@@ -500,43 +162,21 @@
               "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\AddictionController.cs",
               "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\AddictionController.cs",
               "RelativeToolTip": "Wara3__web_api\\Controllers\\AddictionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:17:23.878Z"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddictionController.cs",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\AddictionController.cs",
-              "RelativeDocumentMoniker": "Wara3__web_api\\Controllers\\AddictionController.cs",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Controllers\\AddictionController.cs",
-              "RelativeToolTip": "Wara3__web_api\\Controllers\\AddictionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:17:23.878Z"
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+              "WhenOpened": "2025-01-13T13:37:24.258Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\appsettings.json",
               "RelativeDocumentMoniker": "Wara3__web_api\\appsettings.json",
-              "ToolTip": "C:\\Users\\hazem\\OneDrive\\Documents\\Git\\GitHub Desktop\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\appsettings.json",
               "RelativeToolTip": "Wara3__web_api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-07T14:42:43.195Z"
+              "WhenOpened": "2025-01-13T13:37:24.268Z"
             }
           ]
         }
