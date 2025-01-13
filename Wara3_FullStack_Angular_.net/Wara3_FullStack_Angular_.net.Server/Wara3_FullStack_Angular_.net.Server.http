@@ -1,6 +1,0 @@
-@Wara3_FullStack_Angular_.net.Server_HostAddress = http://localhost:5189
-
-GET {{Wara3_FullStack_Angular_.net.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
