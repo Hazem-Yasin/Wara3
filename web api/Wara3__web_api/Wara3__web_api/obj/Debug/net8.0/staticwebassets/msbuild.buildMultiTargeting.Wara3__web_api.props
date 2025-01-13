@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Wara3__web_api.props" />
+</Project>

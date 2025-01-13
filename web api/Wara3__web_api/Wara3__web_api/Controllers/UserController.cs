@@ -1,46 +1,55 @@
-﻿using Microsoft.AspNetCore.Mvc; // Provides attributes and classes for building RESTful APIs, such as ControllerBase and Route.
-using Microsoft.EntityFrameworkCore; // Provides Entity Framework Core functionalities like database queries.
-using System.Threading.Tasks;
-using Wara3__web_api; // Allows asynchronous programming with Task.
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-[ApiController] // Indicates that this class is an API controller, enabling features like automatic model validation and binding.
-[Route("api/[controller]")] // Specifies the route for the controller. [controller] is a placeholder that gets replaced by the controller name ("User" here).
-public class UserController : ControllerBase // Inherits from ControllerBase, which is a base class for API controllers (without views).
+namespace Wara3__web_api.Controllers
 {
-    private readonly ApplicationDbContext _context; // Represents the database context for accessing and manipulating data.
-
-    // Constructor: Initializes the controller with the ApplicationDbContext instance (dependency injection).
-    public UserController(ApplicationDbContext context)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UsersController : ControllerBase
     {
-        _context = context; // Assigns the injected context to the private field _context for use in the controller methods.
-    }
+        private readonly ApplicationDbContext _context;
 
-    // GET: api/user
-    [HttpGet] // Maps this method to an HTTP GET request for the "api/user" endpoint.
-    public async Task<IActionResult> GetAllUsers()
-    {
-        // Retrieves all users from the database asynchronously.
-        var users = await _context.Users.ToListAsync();
-        
-        // Returns the list of users with a 200 OK HTTP status code.
-        return Ok(users);
-    }
-
-    // GET: api/user/{id}
-    [HttpGet("{id}")] // Maps this method to an HTTP GET request for "api/user/{id}" where {id} is a placeholder for the user's ID.
-    public async Task<IActionResult> GetUserById(int id)
-    {
-        // Finds a user in the database by their ID asynchronously.
-        var user = await _context.Users.FindAsync(id);
-
-        // If no user is found, return a 404 Not Found response with an error message.
-        if (user == null)
+        public UsersController(ApplicationDbContext context)
         {
-            return NotFound(new { Message = "User not found" }); // Creates a JSON object with an error message.
+            _context = context;
         }
+        #region GetAllUserNames
+        [HttpGet]
+        public async Task<IActionResult> GetAllUserNames()
+        {
+            var userNames = await _context.Users
+                                          .Select(u => u.UserName)
+                                          .ToListAsync();
 
-        // If the user is found, return their details with a 200 OK HTTP status code.
-        return Ok(user);
+            return Ok(userNames);
+        }
+        #endregion
+
+        #region UpdateUserName
+        // This is a PUT endpoint that will allow the updating of a user's name based on the user ID.
+        [HttpPut("{id}")]  // This attribute specifies that this method will handle PUT requests with a user ID as part of the URL.
+        public async Task<IActionResult> UpdateUserName(int id, [FromBody] string newUserName)
+        {
+            // Find the user by the given ID from the database
+            var user = await _context.Users.FindAsync(id);
+
+            // If no user is found, return a 404 Not Found response
+            if (user == null)
+            {
+                return NotFound($"User with id {id} not found");
+            }
+
+            // Update the UserName property with the new user name received in the request body
+            user.UserName = newUserName;
+
+            // Save the changes to the database asynchronously
+            await _context.SaveChangesAsync();
+
+            // Return a successful response with the updated user name
+            return Ok($"User name updated to {newUserName}");
+        }
+        #endregion
+
+
     }
 }
-
