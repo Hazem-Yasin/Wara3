@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj": {}
+    "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj": {
+    "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
+        "projectUniqueName": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
         "projectName": "Wara3__web_api",
-        "projectPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
+        "projectPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
         "packagesPath": "C:\\Users\\HazemYa-sin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\obj\\",
+        "outputPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

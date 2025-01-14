@@ -10,6 +10,6 @@
         public string PhoneNumber { get; set; }
         public bool AllowNotifcations { get; set; }
 
-        public ICollection<Addiction> Addictions { get; set; }
+        public ICollection<Addiction>? Addictions { get; set; }
     }
 }

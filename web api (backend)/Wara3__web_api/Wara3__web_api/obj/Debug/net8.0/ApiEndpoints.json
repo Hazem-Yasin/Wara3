@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "Wara3__web_api.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Wara3__web_api.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Wara3__web_api.Controllers.UsersController",
     "Method": "UpdateUserName",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "PUT",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUTEBgUyI5Q=",
+  "dgSpecHash": "KmF/bCjETHU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
+  "projectFilePath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\web api (backend)\\Wara3__web_api\\Wara3__web_api\\Wara3__web_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HazemYa-sin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\HazemYa-sin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
