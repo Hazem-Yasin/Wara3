@@ -37,7 +37,7 @@ namespace Wara3__web_api.Controllers
                 return Ok($"Addiction name have ben updated to {newAddictionName}");
             }
             #endregion
-            #region DeleteAddiction 
+            #region DeleteAddiction
             [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteAddiction(int id)
             {

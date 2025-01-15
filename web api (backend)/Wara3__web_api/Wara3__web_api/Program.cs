@@ -11,14 +11,14 @@ namespace Wara3__web_api
 
             // Add services to the container.
 
-            #region DbContext 
+            #region DbContext
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             #endregion
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(auto);
 
             var app = builder.Build();
 
