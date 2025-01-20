@@ -1,0 +1,13 @@
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\bin\Debug\net9.0\wara3.test.Core.deps.json
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\bin\Debug\net9.0\wara3.test.Core.dll
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\bin\Debug\net9.0\wara3.test.Core.pdb
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.csproj.AssemblyReference.cache
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.AssemblyInfoInputs.cache
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.AssemblyInfo.cs
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.csproj.CoreCompileInputs.cache
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.sourcelink.json
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.dll
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\refint\wara3.test.Core.dll
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\wara3.test.Core.pdb
+C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Core\obj\Debug\net9.0\ref\wara3.test.Core.dll

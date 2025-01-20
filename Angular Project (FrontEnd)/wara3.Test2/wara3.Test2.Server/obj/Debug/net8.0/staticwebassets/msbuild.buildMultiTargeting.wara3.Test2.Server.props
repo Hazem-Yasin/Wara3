@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\wara3.Test2.Server.props" />
+</Project>

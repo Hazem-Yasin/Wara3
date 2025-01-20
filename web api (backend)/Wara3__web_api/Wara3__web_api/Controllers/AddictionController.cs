@@ -15,7 +15,7 @@ namespace Wara3__web_api.Controllers
             {
                 _context = context;
             }
-            
+
             #region GetAllAddictionName
             [HttpGet]
             public async Task<IActionResult> GetAllAddictionNames()
@@ -24,7 +24,7 @@ namespace Wara3__web_api.Controllers
                 return Ok(AddictioNames);
             }
             #endregion
-            
+
             #region UpdateAddictionName
             [HttpPut("{id}")]
             public async Task<IActionResult> UpdateAddictionName(int id, [FromBody] string newAddictionName, Addiction addiction)
@@ -39,7 +39,7 @@ namespace Wara3__web_api.Controllers
                 return Ok($"Addiction name have ben updated to {newAddictionName}");
             }
             #endregion
-            
+
             #region DeleteAddiction
             [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteAddiction(int id)

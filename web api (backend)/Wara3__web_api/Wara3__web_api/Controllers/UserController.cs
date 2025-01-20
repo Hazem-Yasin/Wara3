@@ -35,7 +35,7 @@ namespace Wara3__web_api.Controllers
             return Ok($"User name updated to {newUserName}");
         }
         #endregion
-        #region DeleteUser 
+        #region DeleteUser
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

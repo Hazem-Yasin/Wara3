@@ -1,0 +1,758 @@
+2025-01-20T18:33:30.8114763+02:00  [WRN] The WebRootPath was not found: "C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-01-20T18:33:31.3385368+02:00  [WRN] The WebRootPath was not found: "C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-01-20T18:33:40.8656737+02:00  [INF] Executed DbCommand ("363"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [wara3.test];" (0723d8ff)
+2025-01-20T18:33:41.0295366+02:00  [INF] Executed DbCommand ("150"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [wara3.test] SET READ_COMMITTED_SNAPSHOT ON;
+END;" (0723d8ff)
+2025-01-20T18:33:41.1171802+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-01-20T18:33:41.1412542+02:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-01-20T18:33:41.2468584+02:00  [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result" (0723d8ff)
+2025-01-20T18:33:41.4487392+02:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;" (0723d8ff)
+2025-01-20T18:33:41.5580486+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-01-20T18:33:41.6014828+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-01-20T18:33:41.6284622+02:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-01-20T18:33:41.6914802+02:00  [INF] Applying migration '"20241114121846_Initial"'. (0e2ac64d)
+2025-01-20T18:33:41.9579062+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AppCustomers] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Email] nvarchar(100) NOT NULL,
+    [PhoneNumber] varchar(30) NULL,
+    [Address] nvarchar(max) NULL,
+    [City] nvarchar(50) NULL,
+    [Gender] int NOT NULL,
+    [CreatedBy] nvarchar(40) NULL,
+    [UpdatedBy] nvarchar(40) NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AppCustomers] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:41.9651133+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AppProductCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    [Icon] nvarchar(max) NULL,
+    [CreatedBy] nvarchar(40) NULL,
+    [UpdatedBy] nvarchar(40) NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AppProductCategories] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:41.9730641+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [CreatedBy] nvarchar(max) NULL,
+    [UpdatedBy] nvarchar(max) NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:41.9831164+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [JobTitle] nvarchar(max) NULL,
+    [FullName] nvarchar(max) NULL,
+    [Configuration] nvarchar(max) NULL,
+    [IsEnabled] bit NOT NULL,
+    [CreatedBy] nvarchar(max) NULL,
+    [UpdatedBy] nvarchar(max) NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:41.9919815+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OpenIddictApplications] (
+    [Id] nvarchar(450) NOT NULL,
+    [ApplicationType] nvarchar(50) NULL,
+    [ClientId] nvarchar(100) NULL,
+    [ClientSecret] nvarchar(max) NULL,
+    [ClientType] nvarchar(50) NULL,
+    [ConcurrencyToken] nvarchar(50) NULL,
+    [ConsentType] nvarchar(50) NULL,
+    [DisplayName] nvarchar(max) NULL,
+    [DisplayNames] nvarchar(max) NULL,
+    [JsonWebKeySet] nvarchar(max) NULL,
+    [Permissions] nvarchar(max) NULL,
+    [PostLogoutRedirectUris] nvarchar(max) NULL,
+    [Properties] nvarchar(max) NULL,
+    [RedirectUris] nvarchar(max) NULL,
+    [Requirements] nvarchar(max) NULL,
+    [Settings] nvarchar(max) NULL,
+    CONSTRAINT [PK_OpenIddictApplications] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:42.0008946+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OpenIddictScopes] (
+    [Id] nvarchar(450) NOT NULL,
+    [ConcurrencyToken] nvarchar(50) NULL,
+    [Description] nvarchar(max) NULL,
+    [Descriptions] nvarchar(max) NULL,
+    [DisplayName] nvarchar(max) NULL,
+    [DisplayNames] nvarchar(max) NULL,
+    [Name] nvarchar(200) NULL,
+    [Properties] nvarchar(max) NULL,
+    [Resources] nvarchar(max) NULL,
+    CONSTRAINT [PK_OpenIddictScopes] PRIMARY KEY ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:42.0098369+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AppProducts] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    [Icon] varchar(256) NULL,
+    [BuyingPrice] decimal(18,2) NOT NULL,
+    [SellingPrice] decimal(18,2) NOT NULL,
+    [UnitsInStock] int NOT NULL,
+    [IsActive] bit NOT NULL,
+    [IsDiscontinued] bit NOT NULL,
+    [ParentId] int NULL,
+    [ProductCategoryId] int NOT NULL,
+    [CreatedBy] nvarchar(40) NULL,
+    [UpdatedBy] nvarchar(40) NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AppProducts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AppProducts_AppProductCategories_ProductCategoryId] FOREIGN KEY ([ProductCategoryId]) REFERENCES [AppProductCategories] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AppProducts_AppProducts_ParentId] FOREIGN KEY ([ParentId]) REFERENCES [AppProducts] ([Id]) ON DELETE NO ACTION
+);" (0723d8ff)
+2025-01-20T18:33:42.0229291+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0294734+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AppOrders] (
+    [Id] int NOT NULL IDENTITY,
+    [Discount] decimal(18,2) NOT NULL,
+    [Comments] nvarchar(500) NULL,
+    [CashierId] nvarchar(450) NULL,
+    [CustomerId] int NOT NULL,
+    [CreatedBy] nvarchar(40) NULL,
+    [UpdatedBy] nvarchar(40) NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AppOrders] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AppOrders_AppCustomers_CustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [AppCustomers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AppOrders_AspNetUsers_CashierId] FOREIGN KEY ([CashierId]) REFERENCES [AspNetUsers] ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:42.0365036+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0486806+02:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0569418+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0679111+02:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0750348+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OpenIddictAuthorizations] (
+    [Id] nvarchar(450) NOT NULL,
+    [ApplicationId] nvarchar(450) NULL,
+    [ConcurrencyToken] nvarchar(50) NULL,
+    [CreationDate] datetime2 NULL,
+    [Properties] nvarchar(max) NULL,
+    [Scopes] nvarchar(max) NULL,
+    [Status] nvarchar(50) NULL,
+    [Subject] nvarchar(400) NULL,
+    [Type] nvarchar(50) NULL,
+    CONSTRAINT [PK_OpenIddictAuthorizations] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_OpenIddictAuthorizations_OpenIddictApplications_ApplicationId] FOREIGN KEY ([ApplicationId]) REFERENCES [OpenIddictApplications] ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:42.0823610+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AppOrderDetails] (
+    [Id] int NOT NULL IDENTITY,
+    [UnitPrice] decimal(18,2) NOT NULL,
+    [Quantity] int NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [ProductId] int NOT NULL,
+    [OrderId] int NOT NULL,
+    [CreatedBy] nvarchar(40) NULL,
+    [UpdatedBy] nvarchar(40) NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AppOrderDetails] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AppOrderDetails_AppOrders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [AppOrders] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AppOrderDetails_AppProducts_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [AppProducts] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2025-01-20T18:33:42.0903257+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [OpenIddictTokens] (
+    [Id] nvarchar(450) NOT NULL,
+    [ApplicationId] nvarchar(450) NULL,
+    [AuthorizationId] nvarchar(450) NULL,
+    [ConcurrencyToken] nvarchar(50) NULL,
+    [CreationDate] datetime2 NULL,
+    [ExpirationDate] datetime2 NULL,
+    [Payload] nvarchar(max) NULL,
+    [Properties] nvarchar(max) NULL,
+    [RedemptionDate] datetime2 NULL,
+    [ReferenceId] nvarchar(100) NULL,
+    [Status] nvarchar(50) NULL,
+    [Subject] nvarchar(400) NULL,
+    [Type] nvarchar(50) NULL,
+    CONSTRAINT [PK_OpenIddictTokens] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_OpenIddictTokens_OpenIddictApplications_ApplicationId] FOREIGN KEY ([ApplicationId]) REFERENCES [OpenIddictApplications] ([Id]),
+    CONSTRAINT [FK_OpenIddictTokens_OpenIddictAuthorizations_AuthorizationId] FOREIGN KEY ([AuthorizationId]) REFERENCES [OpenIddictAuthorizations] ([Id])
+);" (0723d8ff)
+2025-01-20T18:33:42.0965337+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppCustomers_Name] ON [AppCustomers] ([Name]);" (0723d8ff)
+2025-01-20T18:33:42.1023133+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppOrderDetails_OrderId] ON [AppOrderDetails] ([OrderId]);" (0723d8ff)
+2025-01-20T18:33:42.1077971+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppOrderDetails_ProductId] ON [AppOrderDetails] ([ProductId]);" (0723d8ff)
+2025-01-20T18:33:42.1127767+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppOrders_CashierId] ON [AppOrders] ([CashierId]);" (0723d8ff)
+2025-01-20T18:33:42.1186662+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppOrders_CustomerId] ON [AppOrders] ([CustomerId]);" (0723d8ff)
+2025-01-20T18:33:42.1540266+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppProducts_Name] ON [AppProducts] ([Name]);" (0723d8ff)
+2025-01-20T18:33:42.1603636+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppProducts_ParentId] ON [AppProducts] ([ParentId]);" (0723d8ff)
+2025-01-20T18:33:42.1665886+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AppProducts_ProductCategoryId] ON [AppProducts] ([ProductCategoryId]);" (0723d8ff)
+2025-01-20T18:33:42.1723299+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);" (0723d8ff)
+2025-01-20T18:33:42.1782357+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;" (0723d8ff)
+2025-01-20T18:33:42.1846570+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);" (0723d8ff)
+2025-01-20T18:33:42.1906744+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);" (0723d8ff)
+2025-01-20T18:33:42.1966104+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);" (0723d8ff)
+2025-01-20T18:33:42.2037433+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);" (0723d8ff)
+2025-01-20T18:33:42.2124129+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;" (0723d8ff)
+2025-01-20T18:33:42.2201332+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [IX_OpenIddictApplications_ClientId] ON [OpenIddictApplications] ([ClientId]) WHERE [ClientId] IS NOT NULL;" (0723d8ff)
+2025-01-20T18:33:42.2269711+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_OpenIddictAuthorizations_ApplicationId_Status_Subject_Type] ON [OpenIddictAuthorizations] ([ApplicationId], [Status], [Subject], [Type]);" (0723d8ff)
+2025-01-20T18:33:42.2346667+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [IX_OpenIddictScopes_Name] ON [OpenIddictScopes] ([Name]) WHERE [Name] IS NOT NULL;" (0723d8ff)
+2025-01-20T18:33:42.2428680+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_OpenIddictTokens_ApplicationId_Status_Subject_Type] ON [OpenIddictTokens] ([ApplicationId], [Status], [Subject], [Type]);" (0723d8ff)
+2025-01-20T18:33:42.2516333+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_OpenIddictTokens_AuthorizationId] ON [OpenIddictTokens] ([AuthorizationId]);" (0723d8ff)
+2025-01-20T18:33:42.2585119+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX [IX_OpenIddictTokens_ReferenceId] ON [OpenIddictTokens] ([ReferenceId]) WHERE [ReferenceId] IS NOT NULL;" (0723d8ff)
+2025-01-20T18:33:42.2669612+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241114121846_Initial', N'9.0.0');" (0723d8ff)
+2025-01-20T18:33:42.3008241+02:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result" (0723d8ff)
+2025-01-20T18:33:43.0943345+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-01-20T18:33:43.1190559+02:00  [INF] Generating inbuilt accounts (d5983574)
+2025-01-20T18:33:43.5411641+02:00  [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:43.5522441+02:00  [INF] Generating default role: "administrator" (fe239e0a)
+2025-01-20T18:33:43.5793393+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.0876225+02:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [CreatedBy], [CreatedDate], [Description], [Name], [NormalizedName], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-01-20T18:33:44.1360858+02:00  [INF] Executed DbCommand ("13"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.2610328+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.3443668+02:00  [INF] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p9='?' (Size = 450), @p3='?' (Size = 4000), @p10='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoleClaims] ([ClaimType], [ClaimValue], [RoleId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p3, [Description] = @p4, [Name] = @p5, [NormalizedName] = @p6, [UpdatedBy] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9 AND [ConcurrencyStamp] IS NULL;" (0723d8ff)
+2025-01-20T18:33:44.4028099+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.4219283+02:00  [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p9='?' (Size = 450), @p3='?' (Size = 4000), @p10='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoleClaims] ([ClaimType], [ClaimValue], [RoleId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p3, [Description] = @p4, [Name] = @p5, [NormalizedName] = @p6, [UpdatedBy] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9 AND [ConcurrencyStamp] = @p10;" (0723d8ff)
+2025-01-20T18:33:44.4314752+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.4414581+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p9='?' (Size = 450), @p3='?' (Size = 4000), @p10='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoleClaims] ([ClaimType], [ClaimValue], [RoleId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p3, [Description] = @p4, [Name] = @p5, [NormalizedName] = @p6, [UpdatedBy] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9 AND [ConcurrencyStamp] = @p10;" (0723d8ff)
+2025-01-20T18:33:44.4504138+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.4819260+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p9='?' (Size = 450), @p3='?' (Size = 4000), @p10='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoleClaims] ([ClaimType], [ClaimValue], [RoleId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p3, [Description] = @p4, [Name] = @p5, [NormalizedName] = @p6, [UpdatedBy] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9 AND [ConcurrencyStamp] = @p10;" (0723d8ff)
+2025-01-20T18:33:44.4916351+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.5012806+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p9='?' (Size = 450), @p3='?' (Size = 4000), @p10='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoleClaims] ([ClaimType], [ClaimValue], [RoleId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p3, [Description] = @p4, [Name] = @p5, [NormalizedName] = @p6, [UpdatedBy] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9 AND [ConcurrencyStamp] = @p10;" (0723d8ff)
+2025-01-20T18:33:44.5103131+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.5154122+02:00  [INF] Generating default role: "user" (fe239e0a)
+2025-01-20T18:33:44.5225492+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.5382291+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (Size = 256), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [CreatedBy], [CreatedDate], [Description], [Name], [NormalizedName], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-01-20T18:33:44.5453100+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-01-20T18:33:44.5529518+02:00  [INF] Generating default user: "admin" (5195dfcc)
+2025-01-20T18:33:44.9828474+02:00  [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.0261707+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-01-20T18:33:45.2347296+02:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 256), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 4000), @p21='?' (DbType = DateTime2), @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Configuration], [CreatedBy], [CreatedDate], [Email], [EmailConfirmed], [FullName], [IsEnabled], [JobTitle], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedBy], [UpdatedDate], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22);" (0723d8ff)
+2025-01-20T18:33:45.2561979+02:00  [INF] Executed DbCommand ("11"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.2912240+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2025-01-20T18:33:45.4045018+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1" (0723d8ff)
+2025-01-20T18:33:45.4205323+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2025-01-20T18:33:45.4578157+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.4757476+02:00  [INF] Executed DbCommand ("10"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-01-20T18:33:45.5093804+02:00  [INF] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p22='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p23='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTimeOffset), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = DateTime2), @p21='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Configuration] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [FullName] = @p7, [IsEnabled] = @p8, [JobTitle] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [TwoFactorEnabled] = @p18, [UpdatedBy] = @p19, [UpdatedDate] = @p20, [UserName] = @p21
+OUTPUT 1
+WHERE [Id] = @p22 AND [ConcurrencyStamp] = @p23;" (0723d8ff)
+2025-01-20T18:33:45.5164579+02:00  [INF] Generating default user: "user" (5195dfcc)
+2025-01-20T18:33:45.8883226+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.9198861+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-01-20T18:33:45.9315620+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 256), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 4000), @p21='?' (DbType = DateTime2), @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Configuration], [CreatedBy], [CreatedDate], [Email], [EmailConfirmed], [FullName], [IsEnabled], [JobTitle], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedBy], [UpdatedDate], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22);" (0723d8ff)
+2025-01-20T18:33:45.9376459+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.9451918+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2025-01-20T18:33:45.9541218+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1" (0723d8ff)
+2025-01-20T18:33:45.9611717+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2025-01-20T18:33:45.9685263+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:33:45.9746710+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-01-20T18:33:45.9842129+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p22='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p23='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTimeOffset), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 4000), @p20='?' (DbType = DateTime2), @p21='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Configuration] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [FullName] = @p7, [IsEnabled] = @p8, [JobTitle] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [TwoFactorEnabled] = @p18, [UpdatedBy] = @p19, [UpdatedDate] = @p20, [UserName] = @p21
+OUTPUT 1
+WHERE [Id] = @p22 AND [ConcurrencyStamp] = @p23;" (0723d8ff)
+2025-01-20T18:33:45.9900386+02:00  [INF] Inbuilt account generation completed (a663d88d)
+2025-01-20T18:33:46.0130942+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-01-20T18:33:46.0272867+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppProductCategories] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-01-20T18:33:46.0305441+02:00  [INF] Seeding demo data (450ab6b6)
+2025-01-20T18:33:46.0690059+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+ORDER BY [a].[UserName]" (0723d8ff)
+2025-01-20T18:33:46.0778855+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+ORDER BY [a].[UserName]" (0723d8ff)
+2025-01-20T18:33:46.6471077+02:00  [INF] Executed DbCommand ("26"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 50), @p2='?' (Size = 40), @p3='?' (DbType = DateTime2), @p4='?' (Size = 100), @p5='?' (DbType = Int32), @p6='?' (Size = 100), @p7='?' (Size = 30) (DbType = AnsiString), @p8='?' (Size = 40), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 50), @p12='?' (Size = 40), @p13='?' (DbType = DateTime2), @p14='?' (Size = 100), @p15='?' (DbType = Int32), @p16='?' (Size = 100), @p17='?' (Size = 30) (DbType = AnsiString), @p18='?' (Size = 40), @p19='?' (DbType = DateTime2), @p20='?' (Size = 4000), @p21='?' (Size = 50), @p22='?' (Size = 40), @p23='?' (DbType = DateTime2), @p24='?' (Size = 100), @p25='?' (DbType = Int32), @p26='?' (Size = 100), @p27='?' (Size = 30) (DbType = AnsiString), @p28='?' (Size = 40), @p29='?' (DbType = DateTime2), @p30='?' (Size = 4000), @p31='?' (Size = 50), @p32='?' (Size = 40), @p33='?' (DbType = DateTime2), @p34='?' (Size = 100), @p35='?' (DbType = Int32), @p36='?' (Size = 100), @p37='?' (Size = 30) (DbType = AnsiString), @p38='?' (Size = 40), @p39='?' (DbType = DateTime2), @p40='?' (Size = 40), @p41='?' (DbType = DateTime2), @p42='?' (Size = 500), @p43='?' (Size = 4000), @p44='?' (Size = 100), @p45='?' (Size = 40), @p46='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+MERGE [AppCustomers] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, 0),
+(@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, 1),
+(@p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, 2),
+(@p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, 3)) AS i ([Address], [City], [CreatedBy], [CreatedDate], [Email], [Gender], [Name], [PhoneNumber], [UpdatedBy], [UpdatedDate], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Address], [City], [CreatedBy], [CreatedDate], [Email], [Gender], [Name], [PhoneNumber], [UpdatedBy], [UpdatedDate])
+VALUES (i.[Address], i.[City], i.[CreatedBy], i.[CreatedDate], i.[Email], i.[Gender], i.[Name], i.[PhoneNumber], i.[UpdatedBy], i.[UpdatedDate])
+OUTPUT INSERTED.[Id], i._Position;
+INSERT INTO [AppProductCategories] ([CreatedBy], [CreatedDate], [Description], [Icon], [Name], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p40, @p41, @p42, @p43, @p44, @p45, @p46);" (0723d8ff)
+2025-01-20T18:33:46.7185093+02:00  [INF] Executed DbCommand ("50"ms) [Parameters=["@p47='?' (Size = 450), @p48='?' (Size = 500), @p49='?' (Size = 40), @p50='?' (DbType = DateTime2), @p51='?' (DbType = Int32), @p52='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p53='?' (Size = 40), @p54='?' (DbType = DateTime2), @p55='?' (Size = 450), @p56='?' (Size = 500), @p57='?' (Size = 40), @p58='?' (DbType = DateTime2), @p59='?' (DbType = Int32), @p60='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p61='?' (Size = 40), @p62='?' (DbType = DateTime2), @p63='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p64='?' (Size = 40), @p65='?' (DbType = DateTime2), @p66='?' (Size = 500), @p67='?' (Size = 256) (DbType = AnsiString), @p68='?' (DbType = Boolean), @p69='?' (DbType = Boolean), @p70='?' (Size = 100), @p71='?' (DbType = Int32), @p72='?' (DbType = Int32), @p73='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p74='?' (DbType = Int32), @p75='?' (Size = 40), @p76='?' (DbType = DateTime2), @p77='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p78='?' (Size = 40), @p79='?' (DbType = DateTime2), @p80='?' (Size = 500), @p81='?' (Size = 256) (DbType = AnsiString), @p82='?' (DbType = Boolean), @p83='?' (DbType = Boolean), @p84='?' (Size = 100), @p85='?' (DbType = Int32), @p86='?' (DbType = Int32), @p87='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p88='?' (DbType = Int32), @p89='?' (Size = 40), @p90='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+MERGE [AppOrders] USING (
+VALUES (@p47, @p48, @p49, @p50, @p51, @p52, @p53, @p54, 0),
+(@p55, @p56, @p57, @p58, @p59, @p60, @p61, @p62, 1)) AS i ([CashierId], [Comments], [CreatedBy], [CreatedDate], [CustomerId], [Discount], [UpdatedBy], [UpdatedDate], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CashierId], [Comments], [CreatedBy], [CreatedDate], [CustomerId], [Discount], [UpdatedBy], [UpdatedDate])
+VALUES (i.[CashierId], i.[Comments], i.[CreatedBy], i.[CreatedDate], i.[CustomerId], i.[Discount], i.[UpdatedBy], i.[UpdatedDate])
+OUTPUT INSERTED.[Id], i._Position;
+MERGE [AppProducts] USING (
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71, @p72, @p73, @p74, @p75, @p76, 0),
+(@p77, @p78, @p79, @p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, @p88, @p89, @p90, 1)) AS i ([BuyingPrice], [CreatedBy], [CreatedDate], [Description], [Icon], [IsActive], [IsDiscontinued], [Name], [ParentId], [ProductCategoryId], [SellingPrice], [UnitsInStock], [UpdatedBy], [UpdatedDate], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BuyingPrice], [CreatedBy], [CreatedDate], [Description], [Icon], [IsActive], [IsDiscontinued], [Name], [ParentId], [ProductCategoryId], [SellingPrice], [UnitsInStock], [UpdatedBy], [UpdatedDate])
+VALUES (i.[BuyingPrice], i.[CreatedBy], i.[CreatedDate], i.[Description], i.[Icon], i.[IsActive], i.[IsDiscontinued], i.[Name], i.[ParentId], i.[ProductCategoryId], i.[SellingPrice], i.[UnitsInStock], i.[UpdatedBy], i.[UpdatedDate])
+OUTPUT INSERTED.[Id], i._Position;" (0723d8ff)
+2025-01-20T18:33:46.7590192+02:00  [INF] Executed DbCommand ("28"ms) [Parameters=["@p91='?' (Size = 40), @p92='?' (DbType = DateTime2), @p93='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p94='?' (DbType = Int32), @p95='?' (DbType = Int32), @p96='?' (DbType = Int32), @p97='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p98='?' (Size = 40), @p99='?' (DbType = DateTime2), @p100='?' (Size = 40), @p101='?' (DbType = DateTime2), @p102='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p103='?' (DbType = Int32), @p104='?' (DbType = Int32), @p105='?' (DbType = Int32), @p106='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p107='?' (Size = 40), @p108='?' (DbType = DateTime2), @p109='?' (Size = 40), @p110='?' (DbType = DateTime2), @p111='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p112='?' (DbType = Int32), @p113='?' (DbType = Int32), @p114='?' (DbType = Int32), @p115='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p116='?' (Size = 40), @p117='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [AppOrderDetails] USING (
+VALUES (@p91, @p92, @p93, @p94, @p95, @p96, @p97, @p98, @p99, 0),
+(@p100, @p101, @p102, @p103, @p104, @p105, @p106, @p107, @p108, 1),
+(@p109, @p110, @p111, @p112, @p113, @p114, @p115, @p116, @p117, 2)) AS i ([CreatedBy], [CreatedDate], [Discount], [OrderId], [ProductId], [Quantity], [UnitPrice], [UpdatedBy], [UpdatedDate], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CreatedBy], [CreatedDate], [Discount], [OrderId], [ProductId], [Quantity], [UnitPrice], [UpdatedBy], [UpdatedDate])
+VALUES (i.[CreatedBy], i.[CreatedDate], i.[Discount], i.[OrderId], i.[ProductId], i.[Quantity], i.[UnitPrice], i.[UpdatedBy], i.[UpdatedDate])
+OUTPUT INSERTED.[Id], i._Position;" (0723d8ff)
+2025-01-20T18:33:46.7800358+02:00  [INF] Seeding demo data completed (9ad589ff)
+2025-01-20T18:33:46.8866769+02:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-01-20T18:33:47.0008639+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-01-20T18:33:47.1405517+02:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictApplications] ([Id], [ApplicationType], [ClientId], [ClientSecret], [ClientType], [ConcurrencyToken], [ConsentType], [DisplayName], [DisplayNames], [JsonWebKeySet], [Permissions], [PostLogoutRedirectUris], [Properties], [RedirectUris], [Requirements], [Settings])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);" (0723d8ff)
+2025-01-20T18:33:47.1799607+02:00  [INF] Executed DbCommand ("12"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-01-20T18:33:47.1886084+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-01-20T18:33:47.1963810+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictApplications] ([Id], [ApplicationType], [ClientId], [ClientSecret], [ClientType], [ConcurrencyToken], [ConsentType], [DisplayName], [DisplayNames], [JsonWebKeySet], [Permissions], [PostLogoutRedirectUris], [Properties], [RedirectUris], [Requirements], [Settings])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);" (0723d8ff)
+2025-01-20T18:33:48.2637181+02:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-01-20T18:33:48.2686854+02:00  [INF] Quartz Scheduler created (389d80b0)
+2025-01-20T18:33:48.2751688+02:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-01-20T18:33:48.2795306+02:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-01-20T18:33:48.2858936+02:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-01-20T18:33:48.2914035+02:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-01-20T18:33:48.2998279+02:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-01-20T18:33:49.8564573+02:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2025-01-20T18:33:49.8600254+02:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-01-20T18:33:49.8655719+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-01-20T18:33:49.8683591+02:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-01-20T18:33:49.8723423+02:00  [INF] Content root path: "C:\Users\HazemYa-sin\Github\Wara3\Angular Project (FrontEnd)\wara3.test\wara3.test\wara3.test.Server" (cc26f24e)
+2025-01-20T18:33:49.8842190+02:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-01-20T18:35:32.1144834+02:00 0HN9PE0S4DIB6:00000001 [INF] The request URI matched a server endpoint: Token. (956b2bc6)
+2025-01-20T18:35:32.1436018+02:00 0HN9PE0S4DIB6:00000001 [INF] The token request was successfully extracted: "{
+  \"username\": \"hazem.yasin.1416@gmail.com\",
+  \"password\": \"[redacted]\",
+  \"client_id\": \"quickapp_spa\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (04f13da8)
+2025-01-20T18:35:32.2238764+02:00 0HN9PE0S4DIB6:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-01-20T18:35:32.2658919+02:00 0HN9PE0S4DIB6:00000001 [INF] The token request was successfully validated. (d7e51e65)
+2025-01-20T18:35:32.3039784+02:00 0HN9PE0S4DIB6:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2025-01-20T18:35:32.3094474+02:00 0HN9PE0S4DIB6:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-01-20T18:35:32.3456841+02:00 0HN9PE0S4DIB6:00000001 [INF] The response was successfully returned as a JSON document: "{
+  \"error\": \"invalid_grant\",
+  \"error_description\": \"Please check that your username and password is correct.\",
+  \"error_uri\": \"https://documentation.openiddict.com/errors/ID2024\"
+}". (c5d7b905)
+2025-01-20T18:35:32.3502167+02:00 0HN9PE0S4DIB6:00000001 [INF] AuthenticationScheme: "OpenIddict.Server.AspNetCore" was forbidden. (212684b8)
+2025-01-20T18:40:48.1989593+02:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
+ Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+
+   --- End of inner exception stack trace ---
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) [See nested exception: System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+]
+2025-01-20T18:40:48.2251031+02:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
+ Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+
+   --- End of inner exception stack trace ---
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) [See nested exception: System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+]
+2025-01-20T18:40:48.2426992+02:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
+ Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+
+   --- End of inner exception stack trace ---
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) [See nested exception: System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
+ ---> System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreTokenStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictTokenManager`1.OpenIddict.Abstractions.IOpenIddictTokenManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at OpenIddict.EntityFrameworkCore.OpenIddictEntityFrameworkCoreAuthorizationStore`5.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
+   at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
+]

@@ -1,0 +1,6 @@
+@wara3.Test2.Server_HostAddress = http://localhost:5251
+
+GET {{wara3.Test2.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

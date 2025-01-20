@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:51531",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\wara3.Test2.Server\\..\\wara3.test2.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54420A4C-9A79-48F3-9383-C4B2ABE8A9AD}|wara3.test2.client\\wara3.test2.client.esproj|c:\\users\\hazemya-sin\\github\\wara3\\angular project (frontend)\\wara3.test2\\wara3.test2.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54420A4C-9A79-48F3-9383-C4B2ABE8A9AD}|wara3.test2.client\\wara3.test2.client.esproj|solutionrelative:wara3.test2.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54420A4C-9A79-48F3-9383-C4B2ABE8A9AD}|wara3.test2.client\\wara3.test2.client.esproj|c:\\users\\hazemya-sin\\github\\wara3\\angular project (frontend)\\wara3.test2\\wara3.test2.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54420A4C-9A79-48F3-9383-C4B2ABE8A9AD}|wara3.test2.client\\wara3.test2.client.esproj|solutionrelative:wara3.test2.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\wara3.test2.client\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "wara3.test2.client\\src\\app\\app.component.html",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\wara3.test2.client\\src\\app\\app.component.html",
+              "RelativeToolTip": "wara3.test2.client\\src\\app\\app.component.html",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-20T17:22:10.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\wara3.test2.client\\src\\index.html",
+              "RelativeDocumentMoniker": "wara3.test2.client\\src\\index.html",
+              "ToolTip": "C:\\Users\\HazemYa-sin\\Github\\Wara3\\Angular Project (FrontEnd)\\wara3.Test2\\wara3.test2.client\\src\\index.html",
+              "RelativeToolTip": "wara3.test2.client\\src\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-20T17:22:01.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
