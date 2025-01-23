@@ -9,7 +9,6 @@ namespace Wara3__web_api.Controllers
     public class UsersController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-
         public UsersController(ApplicationDbContext context)
         {
             _context = context;
@@ -21,6 +20,19 @@ namespace Wara3__web_api.Controllers
         {
             var userNames = await _context.Users.Select(u => u.UserName).ToListAsync();
             return Ok(userNames);
+        }
+        #endregion
+
+        #region Get One User Name By ID
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetOneUserName(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound($"user with the user id of {id} is not found");
+            }
+            return Ok(user.UserName);
         }
         #endregion
 
