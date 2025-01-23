@@ -1,24 +1,13 @@
-<!-- Remove all HTML boilerplate - Angular handles this in root index.html -->
-<button (click)="handleClick()">Load Users</button>
-
-<!-- Show loading/error states -->
-<div *ngIf="isLoading">
-  <p>Loading users...</p>
-</div>
-
-<div *ngIf="errorMessage" class="error-message">
-  {{ errorMessage }}
-</div>
-
-<!-- Display users list -->
-<div *ngIf="users.length > 0">
-  <h2>Users List</h2>
-  <ul>
-    <li *ngFor="let user of users">
-      {{ user.name }} - {{ user.email }}
-    </li>
-  </ul>
-</div>
-
-<!-- Router outlet should be at the bottom -->
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="app.component.ts"></script>
+  <title>Document</title>
+</head>
+<body>
+  <button (click)="handleClick()">test</button>
+</body>
+</html>
+<router-outlet />
