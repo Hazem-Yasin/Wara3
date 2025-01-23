@@ -8,8 +8,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Wara3.Test6';
-
-  handleClick() {
-    console.log("https://localhost:7186/api/Users");
-  }
 }

@@ -1,0 +1,13 @@
+#btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: darkblue;
+  color: darkcyan;
+  transition: background-color 0.3s, color 0.3s;
+}
