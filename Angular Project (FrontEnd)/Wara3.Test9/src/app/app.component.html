@@ -4,10 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="app.component.ts"></script>
+  <style>
+    select { width: 300px; padding: 10px; margin: 20px; }
+    optgroup { font-weight: bold; }
+  </style>
   <title>Document</title>
 </head>
 <body>
-  <button (click)="handleClick()">test</button>
+  <h2>Choose your addiction</h2>
+  <form id="addictionForm">
+    <label for="addictions">Select an Addiction:</label>
+    <select id="addictions" name="addictions" required>
+      <!-- Substance-Related Addictions -->
+      <optgroup label="Substance Addictions">
+        <option value="alcohol">Alcohol</option>
+        <option value="nicotine">Nicotine (Smoking/Vaping)</option>
+        <option value="cannabis">Cannabis (Marijuana)</option>
+        <option value="opioids">Opioids (Heroin, Fentanyl, Prescription Painkillers)</option>
+        <option value="stimulants">Stimulants (Cocaine, Methamphetamine, Adderall)</option>
+        <option value="benzodiazepines">Benzodiazepines (Xanax, Valium)</option>
+        <option value="hallucinogens">Hallucinogens (LSD, Psilocybin)</option>
+        <option value="inhalants">Inhalants (Glue, Aerosols)</option>
+        <option value="caffeine">Caffeine</option>
+        <option value="steroids">Anabolic Steroids</option>
+      </optgroup>
+      <!-- Behavioral Addictions -->
+      <optgroup label="Behavioral Addictions">
+        <option value="gambling">Gambling</option>
+        <option value="gaming">Gaming/Video Games</option>
+        <option value="internet">Internet/Social Media</option>
+        <option value="shopping">Shopping/Spending</option>
+        <option value="work">Workaholism</option>
+        <option value="exercise">Exercise</option>
+        <option value="sex">Sex/Pornography</option>
+        <option value="food">Food/Binge Eating</option>
+        <option value="sugar">Sugar</option>
+        <option value="tanning">Tanning (UV Addiction)</option>
+        <option value="plastic-surgery">Plastic Surgery</option>
+        <option value="kleptomania">Kleptomania (Stealing)</option>
+      </optgroup>
+      <!-- Psychological/Emotional Addictions -->
+      <optgroup label="Psychological Patterns">
+        <option value="codependency">Codependency</option>
+        <option value="self-harm">Self-Harm</option>
+        <option value="emotional-dysregulation">Emotional Dysregulation</option>
+        <option value="drama">Drama/Chaos Addiction</option>
+        <option value="validation">Seeking External Validation</option>
+      </optgroup>
+      <!-- Technology-Related -->
+      <optgroup label="Technology Addictions">
+        <option value="smartphone">Smartphone/Notification Addiction</option>
+        <option value="streaming">Binge-Watching (Netflix, YouTube)</option>
+        <option value="online-gambling">Online Gambling/Crypto Trading</option>
+        <option value="doomscrolling">Doomscrolling (News/Social Media)</option>
+      </optgroup>
+      <!-- Lesser-Known Addictions -->
+      <optgroup label="Lesser-Known Addictions">
+        <option value="adrenaline">Adrenaline/Thrill-Seeking</option>
+        <option value="hoarding">Hoarding</option>
+        <option value="trichotillomania">Trichotillomania (Hair-Pulling)</option>
+        <option value="dermatillomania">Dermatillomania (Skin-Picking)</option>
+        <option value="pyromania">Pyromania (Fire-Setting)</option>
+        <option value="collecting">Obsessive Collecting</option>
+        <option value="perfectionism">Perfectionism</option>
+      </optgroup>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
 <router-outlet />

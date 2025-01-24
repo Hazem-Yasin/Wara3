@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { RouterOutlet } from '@angular/router'; // Correct import for RouterOutlet
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, // Add this to mark the component as standalone
+  imports: [RouterOutlet], // Now valid with standalone: true
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Wara3.Test9';
+
   handleClick() {
-    this.http.get('http://localhost:7186/api/Users').subscribe(console.log);}
+    console.log("test");
+  }
 }
