@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wara3__web_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad01ea932f8b6a0a1a2e9d4fc1e64cd8d8d0ba9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0618693f6cb8f8cacd087b4a1a8afa785547bf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wara3__web_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wara3__web_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
